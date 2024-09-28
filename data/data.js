@@ -1,64 +1,55 @@
-import jsHw from "../public/js-home-work.jpg";
-import htmlHw from "../public/html-home-work.jpg";
+import filmotekaImg from "../public/filmoteka-project.jpg";
+import webStudioImg from "../public/web-studio-project.jpg";
+import educationImg from "../public/education-project.jpg";
 import portfolio from "../public/portfolio.jpg";
 import provider from "../public/provider.jpg";
 const heroSkills = [
-  "On-page SEO",
-  "Off-page (Off-site) SEO",
-  "Seo аналітика",
-  "Збір семантичного ядра та кластеризація його", 
-  "Google Search Console", 
-  "Google Tag Manager", 
-  // "", 
   "Html5",
   "Css3",
   "Sass",
+  "Styled-components",
+  "Tailwind Css",
   "Bem",
   "JavaScript",
   "React.js",
+  "Next.js",
   "TypeScript",
   "Redux",
   "Zustand",
-  "Styled-components",
-  "Next.js",
-  "Tailwind Css",
+  "React-router",
 ];
 const heroProjects = [
   {
     id: 1,
-    discription:
-      "Проект 'Веб студія' фреймворк Next.js, для стилізації використав TailwindCss.",
-    livePage: "https://web-studio-next-gamma.vercel.app/",
-    code: "https://github.com/PavloGram/web-studio-next",
-    stack: ["Html5", "Css3", "JavaScript", "Sass"],
-    img: htmlHw,
+    discription: "Web studio",
+    livePage: "https://main--sprightly-klepon-de0c7f.netlify.app/",
+    code: "https://github.com/PavloGram/react-web-studio",
+    stack: [
+      "Html5",
+      "Css3",
+      "Sass",
+      "Bem",
+      "JavaScript",
+      "React.js",
+      "React router",
+    ],
+    img: webStudioImg,
   },
   {
     id: 2,
-    discription:
-      "Проект 'Інтернет провайдер', фреймворк Next.js, для стилізації використав TailwindCss, менеджер стану Zustand.",
-    livePage: "https://portfolio-project-provider.vercel.app/",
-    code: "https://github.com/PavloGram/portfolio-project-provider",
-    stack: ["Html5", "Css3", "JavaScript", "Sass"],
-    img: provider,
+    discription: "Education",
+    livePage: "https://main--glittering-madeleine-d41b31.netlify.app/",
+    code: "https://github.com/PavloGram/first-react-resume-project",
+    stack: ["Html5", "Css3", "Sass", "Bem", "JavaScript", "React.js"],
+    img: educationImg,
   },
   {
     id: 3,
-    discription:
-      "Проект 'Фільмотека', фреймворк Next.js, для стилізації використав Scss, менеджер стану Redux. В цьому проекті написав свою пагінацію.",
+    discription: "Filmoteka",
     livePage: "https://film-next-rho.vercel.app/",
     code: "https://github.com/PavloGram/film-next",
-    stack: ["Html5", "Css3", "JavaScript", "Bem", "Next.js", "Scss"],
-    img: jsHw,
-  },
-  {
-    id: 4,
-    discription:
-      "Проект 'Портфоліо', фреймворк Next.js, для стилізації використав TailwindCss.",
-    livePage: "https://resume-pied-pi.vercel.app/",
-    code: "https://github.com/PavloGram/resume",
-    stack: ["Html5", "Css3", "JavaScript", "Bem", "Next.js", "Tailwind Css"],
-    img: portfolio,
+    stack: ["Html5", "Css3", "Bem", "Sass", "JavaScript", "Next.js", "Rtk"],
+    img: filmotekaImg,
   },
 ];
 const heroContacts = [
@@ -86,9 +77,21 @@ const heroContacts = [
     href: "https://t.me/PavloHramazhora",
     shortHref: "t.me/PavloHramazhora ",
   },
+  {
+    id: 5,
+    name: "GitHub:",
+    href: "https://github.com/PavloGram",
+    shortHref: "github.com/PavloGram",
+  },
+  {
+    id: 6,
+    name: "CodeWar:",
+    href: "https://www.codewars.com/users/PavloGram",
+    shortHref: "www.codewars.com",
+  },
 ];
 
 const aboutHero =
-  "Вітаю, мене звати Павло Грамажора, я є junior SEO, володію базовими навичка оптимізації веб додатків, а саме збір семантичного ядра та кластеризація його, робота з зовнішньою оптимізацією у вигляді побудови бек-лінків, внутрішньою оптимізацією сайту для проходження ним індексації гугл ботом, налаштування файлів robots.txt, sitemap.xml, знайомий з такими інструментами як Google Search Console, Serpstat, Screaming Frog, маю сертифікат Google Analytics посилання на нього дам нижче і дам посилання на ресурс по якому вивчаю Seo. Також маю досвід Front-end розробки добре розбираюся в мові розмітка Html, мові стилізації Css, також володію непоганим рівнем знання JavaScript і кількох фреймворків. Дякую за увагу, буду вдячний за будь-який фідбек. ";
-const serpStatLink = "https://serpstat.com/ru/blog/chto-dolzhen-znat-seo-spetcialist/";
-  export { heroContacts, heroProjects, heroSkills, aboutHero, serpStatLink };
+  "Greetings, my name is Pavlo, I am 34 years old, I am from Ukraine. I am looking for a front-end developer job, I have JavaScript development skills using the React.js library and the Next.js framework. I can also work with such styling tools as Sass, Css.module, Styled Components, Tailwind. I like programming because I have the opportunity to work on solving complex problems, I like to develop comprehensively and learn new things. ";
+
+export { heroContacts, heroProjects, heroSkills, aboutHero };

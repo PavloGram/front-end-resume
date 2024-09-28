@@ -1,4 +1,4 @@
-import { aboutHero, heroName, heroProjects, serpStatLink } from "@/data/data";
+import { aboutHero, heroName, heroProjects } from "@/data/data";
 import React from "react";
 import Gallery from "./Gallery";
 import Image from "next/image";
@@ -9,18 +9,6 @@ function ProjectInfo() {
       <div className=" max-w-[340px] sm:max-w-[948px] ">
         <div className="border rounded-md border-gray-800 p-2 bg-gray-100">
           <p className="indent-3 pb-4">{aboutHero}</p>
-          <a
-            className="  transition duration-150 hover:text-gray-500 inline-block indent-3"
-            href={serpStatLink}
-          >
-            Посилання на чек-лист &apos;що повинен знати seo-junior&apos;
-          </a>
-          <a
-            className="  transition duration-150 hover:text-gray-500 block indent-3"
-            href="https://skillshop.credential.net/330caa09-099b-422b-8cd1-462f47cf3d5a#gs.4owwjg"
-          >
-            Посилання на сертифікат Google Analytics
-          </a>
         </div>
 
         <Gallery />
@@ -30,7 +18,7 @@ function ProjectInfo() {
             {heroProjects.map((el) => (
               <li key={el.id} className="lg:flex lg:justify-between md:gap-3">
                 <div>
-                  <p className="indent-3">{el.discription}</p>
+                  <p className="indent-3 font-semibold text-lg">{el.discription}</p>
                   <p
                     className="font-semibold w-[270px] md:w-[400px] lg:w-full"
                     style={{
