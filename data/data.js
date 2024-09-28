@@ -1,8 +1,7 @@
-import filmotekaImg from "../public/filmoteka-project.jpg";
-import webStudioImg from "../public/web-studio-project.jpg";
-import educationImg from "../public/education-project.jpg";
-import portfolio from "../public/portfolio.jpg";
-import provider from "../public/provider.jpg";
+import filmotekaImg from "../public/project-img/filmoteka-project.jpg";
+import webStudioImg from "../public/project-img/web-studio-project.jpg";
+import educationImg from "../public/project-img/education-project.jpg";
+
 const heroSkills = [
   "Html5",
   "Css3",
